@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Invitation</title>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ================= COVER ================= -->
+<section class="cover" id="cover">
+  <div class="overlay"></div>
+  <div class="cover-content">
+    <p class="bismillah">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم</p>
+    <h1 id="coupleNames">Nama Pria & Nama Wanita</h1>
+    <p class="date" id="weddingDate">00 Januari 2026</p>
+    <p class="guest">Kepada Yth:</p>
+    <h3 id="guestName">Nama Tamu</h3>
+    <button id="openInvitation">Buka Undangan</button>
+  </div>
+</section>
+
+<!-- ================= MAIN CONTENT ================= -->
+<main id="mainContent">
+
+<!-- AYAT -->
+<section class="ayat section">
+  <div class="container">
+    <p class="arab">
+      وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا
+      وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً
+    </p>
+    <p class="latin">
+      Wa min āyātihī an khalaqa lakum min anfusikum azwājan litaskunū ilaiha wa ja‘ala bainakum mawaddatan wa raḥmah.
+    </p>
+    <p class="arti">
+      “Dan di antara tanda-tanda kebesaran-Nya ialah Dia menciptakan untukmu pasangan hidup...”
+      (QS. Ar-Rum: 21)
+    </p>
+  </div>
+</section>
+
+<!-- PROFILE -->
+<section class="profile section">
+  <div class="container grid-2">
+    <div class="card">
+      <img src="assets/img/groom.jpg" alt="Groom">
+      <h2 id="groomName">Nama Lengkap Pria</h2>
+      <p>Putra dari Bapak ... & Ibu ...</p>
+    </div>
+
+    <div class="card">
+      <img src="assets/img/bride.jpg" alt="Bride">
+      <h2 id="brideName">Nama Lengkap Wanita</h2>
+      <p>Putri dari Bapak ... & Ibu ...</p>
+    </div>
+  </div>
+</section>
+
+<!-- EVENT -->
+<section class="event section">
+  <div class="container">
+
+    <div class="event-card">
+      <h3>Akad Nikah</h3>
+      <p id="akadDate">Hari, Tanggal</p>
+      <p id="akadTime">Jam</p>
+      <p id="akadLocation">Lokasi Lengkap</p>
+      <a href="#" id="akadMap" target="_blank">Buka Maps</a>
+    </div>
+
+    <div class="event-card">
+      <h3>Resepsi</h3>
+      <p id="resepsiDate">Hari, Tanggal</p>
+      <p id="resepsiTime">Jam</p>
+      <p id="resepsiLocation">Lokasi Lengkap</p>
+      <a href="#" id="resepsiMap" target="_blank">Buka Maps</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- COUNTDOWN -->
+<section class="countdown section">
+  <div class="container">
+    <h2>Menuju Hari Bahagia</h2>
+    <div id="timer"></div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery section">
+  <div class="container grid-3">
+    <img src="assets/img/1.jpg">
+    <img src="assets/img/2.jpg">
+    <img src="assets/img/3.jpg">
+  </div>
+</section>
+
+<!-- RSVP -->
+<section class="rsvp section">
+  <div class="container">
+    <h2>Konfirmasi Kehadiran</h2>
+    <form id="rsvpForm">
+      <input type="text" id="nama" placeholder="Nama Anda" required>
+      <select id="status">
+        <option value="Hadir">Hadir</option>
+        <option value="Tidak Hadir">Tidak Hadir</option>
+      </select>
+      <textarea id="ucapan" placeholder="Ucapan & Doa"></textarea>
+      <button type="submit">Kirim via WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<!-- GIFT -->
+<section class="gift section">
+  <div class="container">
+    <h2>Wedding Gift</h2>
+    <div class="bank-card">
+      <p>Bank ...</p>
+      <p id="bankNumber">1234567890</p>
+      <button onclick="copyRek()">Salin Nomor</button>
+    </div>
+  </div>
+</section>
+
+<!-- DOA -->
+<section class="doa section">
+  <div class="container">
+    <p class="arab">
+      بَارَكَ اللَّهُ لَكَ وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ
+    </p>
+    <p class="latin">
+      Bārakallāhu laka wa bāraka ‘alaika wa jama‘a bainakumā fī khair.
+    </p>
+    <p class="arti">
+      Semoga Allah memberkahimu dan mengumpulkan kalian dalam kebaikan.
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir.</p>
+  <p>© 2026 Wedding Invitation</p>
+</footer>
+
+</main>
+
+<audio id="bgMusic" src="assets/music/music.mp3" loop></audio>
+
+<script src="config.js"></script>
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>
